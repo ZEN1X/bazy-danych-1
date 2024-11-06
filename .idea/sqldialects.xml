@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/lab3/lab3.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab4/lab4.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab4/lab4_learning/lab4_create_stock.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab4/lab4_learning/lab4_joins.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab4/lab4_learning/lab4_prepare.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab4/lab4_learning/lab4_select_aggregate.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab4/lab4_prepare/lab4_prepare_biblioteka.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab4/lab4_prepare/lab4_prepare_firma.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab5/lab5.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab5/lab5_learning/lab5_nieskorelowane.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab5/lab5_learning/lab5_skorelowane.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab5/lab5_learning/lab5_widoki.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab6/lab6.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab6/lab6_learning/lab6_case.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab6/lab6_learning/lab6_cte.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab6/lab6_learning/lab6_cte_recursive.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab6/lab6_learning/lab6_data_types.sql" dialect="PostgreSQL" />
+  </component>
+</project>
