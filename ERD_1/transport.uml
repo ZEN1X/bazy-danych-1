@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>29ca44fe-d7ac-49f4-9999-58a07d21f8be.SCHEMA:BDlab.transport</OriginalElement>
+  <nodes>
+    <node x="9.25" y="400.0">29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.transport.odjazd</node>
+    <node x="-105.0" y="202.0">29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.transport.przystanek</node>
+    <node x="218.75" y="-31.5">29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.transport.linia</node>
+    <node x="125.0" y="190.0">29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.transport.podroz</node>
+    <node x="34.75" y="-140.0">29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.transport.kalendarz</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.transport.odjazd" target="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.transport.podroz" relationship="REFERENCES">
+      <point x="46.75" y="-68.0" />
+      <point x="149.5" y="375.0" />
+      <point x="205.5" y="375.0" />
+      <point x="0.0" y="80.0" />
+    </edge>
+    <edge source="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.transport.podroz" target="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.transport.linia" relationship="REFERENCES">
+      <point x="40.25" y="-80.0" />
+      <point x="245.75" y="165.0" />
+      <point x="294.25" y="165.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.transport.odjazd" target="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.transport.przystanek" relationship="REFERENCES">
+      <point x="-46.75" y="-68.0" />
+      <point x="56.0" y="375.0" />
+      <point x="0.0" y="375.0" />
+      <point x="0.0" y="68.0" />
+    </edge>
+    <edge source="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.transport.podroz" target="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.transport.kalendarz" relationship="REFERENCES">
+      <point x="-40.25" y="-80.0" />
+      <point x="165.25" y="165.0" />
+      <point x="116.75" y="165.0" />
+      <point x="0.0" y="140.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0833333333333333" showDependencies="false" x="142.49999999999994" y="208.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
