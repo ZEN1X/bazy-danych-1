@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/ERD_1/DDL.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/lab3/lab3.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/lab4/lab4.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/lab4/lab4_learning/lab4_create_stock.sql" dialect="PostgreSQL" />
@@ -18,5 +19,6 @@
     <file url="file://$PROJECT_DIR$/lab6/lab6_learning/lab6_cte.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/lab6/lab6_learning/lab6_cte_recursive.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/lab6/lab6_learning/lab6_data_types.sql" dialect="PostgreSQL" />
+    <file url="PROJECT" dialect="PostgreSQL" />
   </component>
 </project>
