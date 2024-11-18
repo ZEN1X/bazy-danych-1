@@ -21,6 +21,11 @@
     <file url="file://$PROJECT_DIR$/lab6/lab6_learning/lab6_cte.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/lab6/lab6_learning/lab6_cte_recursive.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/lab6/lab6_learning/lab6_data_types.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab7/lab7.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab7/lab7_learning/lab7_cursor.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab7/lab7_learning/lab7_loop.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab7/lab7_learning/lab7_raise.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab7/lab7_learning/lab7_usd.sql" dialect="PostgreSQL" />
     <file url="PROJECT" dialect="PostgreSQL" />
   </component>
 </project>
