@@ -26,6 +26,9 @@
     <file url="file://$PROJECT_DIR$/lab7/lab7_learning/lab7_loop.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/lab7/lab7_learning/lab7_raise.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/lab7/lab7_learning/lab7_usd.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab8/lab8.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab8/lab8_learning/lab8_insteadof.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab8/lab8_learning/lab8_trigger.sql" dialect="PostgreSQL" />
     <file url="PROJECT" dialect="PostgreSQL" />
   </component>
 </project>
