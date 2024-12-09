@@ -29,6 +29,8 @@
     <file url="file://$PROJECT_DIR$/lab8/lab8.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/lab8/lab8_learning/lab8_insteadof.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/lab8/lab8_learning/lab8_trigger.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab9/lab9.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/lab9/lab9_learning/lab9_transactions.sql" dialect="PostgreSQL" />
     <file url="PROJECT" dialect="PostgreSQL" />
   </component>
 </project>

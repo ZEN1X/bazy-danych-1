@@ -1,0 +1,70 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+EXEC SQL BEGIN DECLARE SECTION;
+    const char *db = "BDlab@ep-soft-hat-a2aw7vto.eu-central-1.aws.neon.tech";
+    const char *usr = "BDlab_owner";
+    const char *pas = "f8we7mZyGXDQ";
+    char fname[40];
+    char lname[40];
+    char book_title[40];
+    int book_id;
+    int id;
+EXEC SQL END DECLARE SECTION;
+
+int main(int argc, char *argv[]) {
+  if (argc <= 1) {
+    return 1;
+  }
+
+    id = atoi(argv[1]);
+
+    // ECPGdebug(1,stderr);
+    EXEC SQL CONNECT TO :db AS con1  USER :usr USING :pas;
+    EXEC SQL SET search_path to biblioteka;
+
+    // kursor ksiazek danego czytelnika
+    EXEC SQL PREPARE query_1 FROM "select distinct k.ksiazka_id from wypozyczenie w join wypozyczenie_ksiazki wk using (wypozyczenie_id) join ksiazka k using (ksiazka_id) where w.czytelnik_id = ?";
+    EXEC SQL DECLARE book_cursor CURSOR FOR query_1;
+
+    // teraz tytuly ksiazek
+    EXEC SQL PREPARE query_2 FROM "select k.tytul from ksiazka k where k.ksiazka_id = ?";
+
+    // teraz imiona i nazwiska czytelnikow
+    EXEC SQL PREPARE query_3 FROM "select distinct c.imie, c.nazwisko from wypozyczenie_ksiazki wk join ksiazka k using (ksiazka_id) join wypozyczenie w using (wypozyczenie_id) join czytelnik c using (czytelnik_id) where wk.ksiazka_id = ?";
+    EXEC SQL DECLARE name_cursor CURSOR FOR query_3;
+
+    /* when end of result set reached, break out of while loop */
+    EXEC SQL WHENEVER NOT FOUND DO BREAK;
+
+    EXEC SQL OPEN book_cursor USING :id; // to id to z programu
+    printf("[");
+    while(1) {
+      EXEC SQL FETCH book_cursor INTO :book_id; // to z query
+      printf("{");
+
+      // mamy id, teraz trzeba znalezc tytul tej ksiazki
+      EXEC SQL EXECUTE query_2 INTO :book_title USING :book_id;
+      printf("\"tytul\": \"%s\",", book_title);
+
+      // teraz bedziemy loopowac po czytelnikach
+      int reader_count = 0;
+      printf("\"czytelnicy\": [");
+      EXEC SQL OPEN name_cursor USING :book_id;
+      while(1) {
+          EXEC SQL FETCH name_cursor INTO :fname, :lname;
+          printf("{");
+          reader_count++;
+          printf("\"imie\": \"%s\", \"nazwisko\": \"%s\"", fname, lname);
+          printf("},");
+      }
+      printf("],");
+      printf("\"ilosc_czytelnikow\": %d", reader_count);
+      EXEC SQL CLOSE name_cursor;
+      printf("},");
+    }
+    EXEC SQL CLOSE book_cursor;
+    printf("]");
+
+  return 0;
+}
