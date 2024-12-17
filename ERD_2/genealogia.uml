@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>29ca44fe-d7ac-49f4-9999-58a07d21f8be.SCHEMA:BDlab.genealogia</OriginalElement>
+  <nodes>
+    <node x="-50.5" y="204.0">29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.genealogia.malzenstwo</node>
+    <node x="-129.5" y="-116.0">29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.genealogia.osoba</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.genealogia.malzenstwo" target="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.genealogia.osoba" relationship="REFERENCES">
+      <point x="-38.75" y="-56.0" />
+      <point x="-11.75" y="180.0" />
+      <point x="16.125" y="180.0" />
+      <point x="29.125" y="116.0" />
+    </edge>
+    <edge source="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.genealogia.osoba" target="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.genealogia.osoba" relationship="REFERENCES">
+      <point x="-116.5" y="-58.0" />
+      <point x="-193.0" y="-58.0" />
+      <point x="-193.0" y="180.0" />
+      <point x="-42.125" y="180.0" />
+      <point x="-29.125" y="116.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="1.3672566371681416" showDependencies="false" x="-33.99999999999994" y="110.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
