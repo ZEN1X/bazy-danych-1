@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>29ca44fe-d7ac-49f4-9999-58a07d21f8be.SCHEMA:BDlab.druzyny</OriginalElement>
+  <nodes>
+    <node x="-87.5" y="420.0">29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.druzyny.gracz_mecz_statystyka</node>
+    <node x="-265.1466314398943" y="128.0">29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.druzyny.gracz</node>
+    <node x="375.9180977542933" y="195.74636723910172">29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.druzyny.mecz</node>
+    <node x="131.3335535006605" y="-111.27080581241744">29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.druzyny.druzyna</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.druzyny.gracz" target="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.druzyny.druzyna" relationship="REFERENCES">
+      <point x="0.0" y="-80.0" />
+      <point x="-157.1466314398943" y="-55.270805812417436" />
+      <point x="-86.5" y="0.0" />
+    </edge>
+    <edge source="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.druzyny.gracz_mecz_statystyka" target="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.druzyny.gracz" relationship="REFERENCES">
+      <point x="-120.0" y="-80.0" />
+      <point x="77.14663143989429" y="80.0" />
+    </edge>
+    <edge source="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.druzyny.gracz_mecz_statystyka" target="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.druzyny.mecz" relationship="REFERENCES">
+      <point x="120.0" y="-80.0" />
+      <point x="160.0" y="395.02509907529725" />
+      <point x="447.5350066050198" y="395.02509907529725" />
+      <point x="-38.38309114927347" y="116.00000000000003" />
+    </edge>
+    <edge source="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.druzyny.mecz" target="29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.druzyny.druzyna" relationship="REFERENCES">
+      <point x="-110.0" y="0.0" />
+      <point x="217.8335535006605" y="311.7463672391017" />
+      <point x="0.0" y="56.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="1.0572625698324023" showDependencies="false" x="111.0" y="232.0" />
+  <SelectedNodes>
+    <node>29ca44fe-d7ac-49f4-9999-58a07d21f8be.TABLE:BDlab.druzyny.druzyna</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
